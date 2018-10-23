@@ -1,0 +1,25 @@
+{
+  "name": "3d-carousel",
+  "version": "1.0.0",
+  "description": "3d carousel for displaying photos using css, html and some js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaisonbk57/3d-carousel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaisonbk57/3d-carousel/issues"
+  },
+  "homepage": "https://github.com/thaisonbk57/3d-carousel#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

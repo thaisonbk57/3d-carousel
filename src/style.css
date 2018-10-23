@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  perspective: 1000px;
+}
+.carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 240px;
+  transition: transform 1s;
+  /* border: 1px solid; */
+  transform-style: preserve-3d;
+  animation: carousel 25s linear infinite alternate;
+}
+/* @keyframes carousel {
+  0% {
+    transform: translate(-50%, -50%) rotateY(-0deg) rotateX(10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateY(-360deg) rotateX(10deg);
+  }
+} */
+.photo {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid;
+  /* backface-visibility: hidden; */
+}
+.photo-1 {
+  transform: rotateY(0deg) translateZ(439px);
+}
+.photo-2 {
+  transform: rotateY(40deg) translateZ(439px);
+}
+.photo-3 {
+  transform: rotateY(80deg) translateZ(439px);
+}
+.photo-4 {
+  transform: rotateY(120deg) translateZ(439px);
+}
+
+.photo-5 {
+  transform: rotateY(160deg) translateZ(439px);
+}
+
+.photo-6 {
+  transform: rotateY(200deg) translateZ(439px);
+}
+
+.photo-7 {
+  transform: rotateY(240deg) translateZ(439px);
+}
+
+.photo-8 {
+  transform: rotateY(280deg) translateZ(439px);
+}
+
+.photo-9 {
+  transform: rotateY(320deg) translateZ(439px);
+}
+
+button {
+  display: inline-block;
+  padding: 8px 20px;
+}
+.btn-group {
+  position: absolute;
+  bottom: 105px;
+  left: 50%;
+  transform: translate(-50%);
+}
