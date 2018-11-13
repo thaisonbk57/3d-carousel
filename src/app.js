@@ -1,15 +1,12 @@
-//   transform: translate(-50%, -50%) rotateY(40deg);
-// const $ = require('jquery');
-
 $(document).ready(function() {
-  const carousel = $('#carousel');
+  const carousel = $("#carousel");
   const itemsCount = 9;
   let step = 360 / itemsCount;
   let photoIndex = 0;
 
   function spinCarousel() {
     let angle = photoIndex * step;
-    carousel.css('transform', `translate(-50%, -50%) rotateY(-${angle}deg)`);
+    carousel.css("transform", `translate(-50%, -50%) rotateY(-${angle}deg)`);
   }
 
   function next() {
@@ -21,14 +18,14 @@ $(document).ready(function() {
     photoIndex--;
     spinCarousel();
   }
-  $('#next')
-    .unbind('click')
-    .on('click', function() {
+  $("#next")
+    .unbind("click")
+    .on("click", function() {
       next();
     });
-  $('#prev')
-    .unbind('click')
-    .on('click', function() {
+  $("#prev")
+    .unbind("click")
+    .on("click", function() {
       prev();
     });
 });
